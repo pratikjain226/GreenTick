@@ -1,1 +1,1 @@
-"# GreenTick" 
+"Green Tick" 
