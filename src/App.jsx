@@ -2,8 +2,8 @@ import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import Home from "./Home";
-import Contest from "./Contest";
-import GlobalCompetitions from "./GlobalCompetitions";
+import GreenTickWeekly from "./GreenTickWeekly";
+import GlobalContests from "./GlobalContests";
 import Practice from "./Practice";
 import Resources from "./Resources";
 import Login from "./Login";
@@ -17,15 +17,11 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/contest" component={Contest} />
+        <Route exact path="/contest" component={GreenTickWeekly} />
         <Route exact path="/practice" component={Practice} />
         <Route exact path="/resources" component={Resources} />
         <Route exact path="/login" component={Login} />
-        <Route
-          exact
-          path="/globalcompetitions"
-          component={GlobalCompetitions}
-        />
+        <Route exact path="/globalcompetitions" component={GlobalContests} />
         <Redirect to="/" />
       </Switch>
     </>

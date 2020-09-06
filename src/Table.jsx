@@ -4,6 +4,11 @@ import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
 import "../../node_modules/react-bootstrap-table/css/react-bootstrap-table.css";
 
 class Table extends Component {
+  // colFormatter = (cell, row) => {
+  //   let link =
+  //     "https://www.hackerrank.com/contests/green-tick-weekly-2/challenges";
+  //   return { cell };
+  // };
   render() {
     return (
       <div>
@@ -12,16 +17,16 @@ class Table extends Component {
             isKey
             dataField="name"
             dataAlign="center"
-            width="60%"
+            width="34%"
             thStyle={{ color: "white" }}
-            tdStyle={{ color: "white", textAlign: "left" }}
+            tdStyle={{ color: "white", textAlign: "center" }}
           >
             Name
           </TableHeaderColumn>
           <TableHeaderColumn
             dataField="date"
             dataAlign="center"
-            width="20%"
+            width="33%"
             thStyle={{ color: "white" }}
             tdStyle={{ color: "white" }}
           >
@@ -30,7 +35,7 @@ class Table extends Component {
           <TableHeaderColumn
             dataField="time"
             dataAlign="center"
-            width="20%"
+            width="33%"
             thStyle={{ color: "white" }}
             tdStyle={{ color: "white" }}
           >

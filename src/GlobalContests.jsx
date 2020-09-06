@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./index.css";
 import Table from "./Table.jsx";
-class GlobalCompetitions extends Component {
+class GlobalContests extends Component {
   constructor(props) {
     super(props); //since we are extending class Table so we have to use super in order to override Component class constructor
     this.state = {
@@ -24,19 +24,24 @@ class GlobalCompetitions extends Component {
   render() {
     return (
       <div class="narrow text-center">
-        <h1> Future Contest</h1>
-        <div style={{ width: "80%", display: "flex" }}>
-          <div style={{ minWidth: "20%" }}></div>
-          <Table data={this.state.future_competitions} />
-        </div>
-        <br></br>
-        <h1> Past Contest</h1>
-        <div style={{ width: "80%", display: "flex" }}>
-          <div style={{ minWidth: "20%" }}></div>
-          <Table data={this.state.past_competitions} />
-        </div>
+        <center>
+          <h3> Upcoming Global Contests</h3>
+          <br></br>
+          <div style={{ width: "50%" }}>
+            <div style={{ minWidth: "20%" }}></div>
+            <Table data={this.state.future_competitions} />
+          </div>
+          <br></br>
+          <br></br>
+          <h3> Past Global Contests</h3>
+          <br></br>
+          <div style={{ width: "50%" }}>
+            <div style={{ minWidth: "20%" }}></div>
+            <Table data={this.state.past_competitions} />
+          </div>
+        </center>
       </div>
     );
   }
 }
-export default GlobalCompetitions;
+export default GlobalContests;

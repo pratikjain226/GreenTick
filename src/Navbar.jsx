@@ -32,7 +32,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/contest">
-                Contest
+                GreenTick Weekly
               </NavLink>
             </li>
             <li className="nav-item">
@@ -47,7 +47,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/globalcompetitions">
-                Competitions
+                Global Contests
               </NavLink>
             </li>
             <li className="nav-item">
