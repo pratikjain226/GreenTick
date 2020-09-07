@@ -7,10 +7,34 @@ class GlobalContests extends Component {
     this.state = {
       //state is by default an object
       future_competitions: [
-        { id: 1, name: "Wasif", date: 21, time: "wasif@email.com" },
-        { id: 2, name: "Ali", date: 19, time: "ali@email.com" },
-        { id: 3, name: "Saad", date: 16, time: "saad@email.com" },
-        { id: 4, name: "Asad", date: 25, time: "asad@email.com" }
+        {
+          id: 1,
+          link: "www.google.com",
+          name: "Wasif",
+          date: 21,
+          time: "wasif@email.com"
+        },
+        {
+          id: 2,
+          link: "www.google.com",
+          name: "Ali",
+          date: 19,
+          time: "ali@email.com"
+        },
+        {
+          id: 3,
+          link: "www.google.com",
+          name: "Saad",
+          date: 16,
+          time: "saad@email.com"
+        },
+        {
+          id: 4,
+          link: "www.google.com",
+          name: "Asad",
+          date: 25,
+          time: "asad@email.com"
+        }
       ],
       past_competitions: [
         { id: 1, name: "Wasif", date: 21, time: "wasif@email.com" },

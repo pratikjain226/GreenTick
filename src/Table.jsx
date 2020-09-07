@@ -4,11 +4,20 @@ import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
 import "../../node_modules/react-bootstrap-table/css/react-bootstrap-table.css";
 
 class Table extends Component {
-  // colFormatter = (cell, row) => {
-  //   let link =
-  //     "https://www.hackerrank.com/contests/green-tick-weekly-2/challenges";
-  //   return { cell };
-  // };
+  CellFormatter(cell, row) {
+    return (
+      <div>
+        <a
+          href={row.link}
+          style={{ color: "white" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {cell}
+        </a>
+      </div>
+    );
+  }
   render() {
     return (
       <div>
@@ -17,6 +26,7 @@ class Table extends Component {
             isKey
             dataField="name"
             dataAlign="center"
+            dataFormat={this.CellFormatter}
             width="34%"
             thStyle={{ color: "white" }}
             tdStyle={{ color: "white", textAlign: "center" }}
